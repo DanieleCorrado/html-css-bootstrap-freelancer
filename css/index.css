@@ -19,16 +19,17 @@ a {
 
 /* Regole header */
 
-#buger_menu {
+#menu {
   display: none;
 }
 
 /* Regole jumbotrone */
 
 #jumbotrone {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
+  background-color: green;
 }
 
 #profile_image {
@@ -44,9 +45,81 @@ a {
 #jumbotrone h2 {
   margin-bottom: 10px;
 }
+
 #jumbotrone span {
   display: block;
   padding-bottom: 10px;
+}
+
+/* Regole main */
+
+/* Regole portfolio */
+
+#portfolio {
+  padding: 20px 0;
+  color: black;
+  text-align: center;
+  background-color: aqua;
+}
+
+/* Regole lavori */
+
+.work {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.work img {
+  width: 100%;
+}
+
+/* Regole about me */
+
+#about_me {
+  background-color: green;
+  text-align: center;
+  padding: 15px;
+}
+
+#about_me .separetor {
+  display: block;
+  margin-bottom: 15px;
+}
+
+#about_me #description {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about_me #description p{
+  padding-bottom: 30px;
+  text-align: left;
+}
+
+/* Regole contact me */
+
+#contact_me {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+#contact_me #form {
+  width: 40%;
+  margin: 10px auto;
+  text-align: left;
+}
+
+#contact_me #form strong {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+#contact_me #form #message {
+  padding-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 /* Regole footer */
@@ -71,23 +144,40 @@ footer {
 
 
 
-
 /* Regole responsive  */
 
+/* Regole s */
 
-/* Regole xs */
-
-@media screen and (max-width:524px) {
-  #menu {
+@media screen and (min-width:524px) {
+  #buger_menu {
     display: none;
   }
 
-  #buger_menu {
+  #menu {
     display: block;
   }
+
+  .work {
+    width: 45%;
+    margin: 5px auto;
+  }
+
+  #description {
+    display: flex;
+  }
+
+  #description p {
+    width: 50%;
+    margin-left: 15px;
+  }
+
+  #contact_me #form {
+    width: 60%;
+  }
+
 }
 
-/* Regole s */
+/* Regole md */
 
 @media screen and (min-width:1121px) {
 
@@ -97,6 +187,24 @@ footer {
 
   footer #infos #social {
     margin: 0;
+  }
+
+  .work {
+    width: 30%;
+  }
+
+  #contact_me #form {
+    width: 80%;
+  }
+
+}
+
+/* Regole lg */
+
+@media screen and (min-width:1360px) {
+
+  .work {
+    width: 30%;
   }
 }
 
@@ -114,9 +222,5 @@ footer {
 #header_nav {
   /* height: 100px; */
   background-color: black;
-}
-
-footer {
-  height: 300px;
 }
 
