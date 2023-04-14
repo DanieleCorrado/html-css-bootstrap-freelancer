@@ -1,3 +1,5 @@
+/* Regole generali */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,5 +7,116 @@
 }
 
 body {
+  color: white;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Regole header */
+
+#buger_menu {
+  display: none;
+}
+
+/* Regole jumbotrone */
+
+#jumbotrone {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#profile_image {
+  width: 200px;
+  margin: 10px auto;
+}
+
+#profile_image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#jumbotrone h2 {
+  margin-bottom: 10px;
+}
+#jumbotrone span {
+  display: block;
+  padding-bottom: 10px;
+}
+
+/* Regole footer */
+
+footer {
+  text-align: center;
+}
+
+#infos {
+  background-color: red;
+  padding: 30px;
+}
+
+#infos #social{
+  margin: 30px 0;
+}
+
+#copyrights {
+  background-color: black;
+  padding: 35px;
+}
+
+
+
+
+/* Regole responsive  */
+
+
+/* Regole xs */
+
+@media screen and (max-width:524px) {
+  #menu {
+    display: none;
+  }
+
+  #buger_menu {
+    display: block;
+  }
+}
+
+/* Regole s */
+
+@media screen and (min-width:1121px) {
+
+  footer #infos {
+    display: flex;
+  }
+
+  footer #infos #social {
+    margin: 0;
+  }
+}
+
+/* DEBUG */
+
+.container {
   background-color: violet;
 }
+
+[class*="col"] {
+  /* background-color: green; */
+  /* border: 1px solid black; */
+}
+
+#header_nav {
+  /* height: 100px; */
+  background-color: black;
+}
+
+footer {
+  height: 300px;
+}
+
