@@ -16,11 +16,43 @@ a {
   color: white;
 }
 
+span {
+  font-size: 26px;
+}
+
+.separator{
+  --b: 6px;   /* controla lo spessore del bordo */
+  --w: 80px;  /* controlla la larghezza della linea*/
+  --g: 15px;  /* controlla il gap */
+  --c: white;
+ 
+  width: fit-content;
+  padding: 0 10px;
+  border-image: 
+     linear-gradient(
+       #0000      calc(50% - var(--b)/2),
+       var(--c) 0 calc(50% + var(--b)/2),
+       #0000    0) 
+    1/0 var(--w)/calc(var(--w) + var(--g));
+  margin-inline: auto;
+}
 
 /* Regole header */
 
+#header_nav {
+  background-color: black;
+}
+
 #menu {
   display: none;
+}
+
+#menu a {
+  padding: 15px;
+}
+
+#menu a:hover {
+  text-decoration: underline;
 }
 
 /* Regole jumbotrone */
@@ -34,7 +66,8 @@ a {
 
 #profile_image {
   width: 200px;
-  margin: 10px auto;
+  margin: 0px auto 10px;
+  padding-top: 10px;
 }
 
 #profile_image img {
@@ -44,6 +77,10 @@ a {
 
 #jumbotrone h2 {
   margin-bottom: 10px;
+}
+
+#jumbotrone .fa-star {
+  color: white;
 }
 
 #jumbotrone span {
@@ -59,10 +96,14 @@ a {
   padding: 20px 0;
   color: black;
   text-align: center;
-  background-color: aqua;
 }
 
 /* Regole lavori */
+
+#portfolio .separator{
+  color: black;
+  --c: black; 
+}
 
 .work {
   width: 90%;
@@ -76,14 +117,9 @@ a {
 /* Regole about me */
 
 #about_me {
-  background-color: green;
+  background-color: rgb(26, 188, 156);
   text-align: center;
   padding: 15px;
-}
-
-#about_me .separetor {
-  display: block;
-  margin-bottom: 15px;
 }
 
 #about_me #description {
@@ -96,12 +132,26 @@ a {
   text-align: left;
 }
 
+#about_me button {
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  border-color: wheat;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 /* Regole contact me */
 
 #contact_me {
   width: 80%;
   margin: 10px auto;
   text-align: center;
+  color: black;
+}
+
+#contact_me .separator {
+  --c: black;
 }
 
 #contact_me #form {
@@ -122,6 +172,20 @@ a {
   margin-bottom: 10px;
 }
 
+#contact_me #form  {
+  color: black;
+}
+
+#contact_me #form button {
+  background-color: rgb(26, 188, 156);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border: none;
+}
+
 /* Regole footer */
 
 footer {
@@ -129,8 +193,27 @@ footer {
 }
 
 #infos {
-  background-color: red;
+  background-color: rgb(58, 84, 109);
   padding: 30px;
+}
+
+#infos span {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+#infos .col {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+#infos #social h3 {
+  padding-bottom: 10px;
+}
+
+#infos bold a {
+  color: green;
 }
 
 #infos #social{
@@ -206,21 +289,5 @@ footer {
   .work {
     width: 30%;
   }
-}
-
-/* DEBUG */
-
-.container {
-  background-color: violet;
-}
-
-[class*="col"] {
-  /* background-color: green; */
-  /* border: 1px solid black; */
-}
-
-#header_nav {
-  /* height: 100px; */
-  background-color: black;
 }
 
