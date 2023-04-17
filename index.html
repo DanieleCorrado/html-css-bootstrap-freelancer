@@ -166,11 +166,36 @@
           <h2 class="separator"><i class="fa-solid fa-star"></i></h2>
 
           <div id="form" class="col-11">
-            <strong>Name</strong>
-            <strong>Email Address</strong>
-            <strong>Phone Number</strong>
-            <strong id="message">Message</strong>
-            <button>Send</button>
+
+            <form>
+
+              <div class="mb-3">
+                <label for="name_control" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name_control" required>                    
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" required>            
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Phone number</label>
+                <input type="tel"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                class="form-control" required>            
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" aria-label="With textarea" required></textarea>       
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Send</button>
+              </div>            
+
+            </form>
           </div>
 
         </section>

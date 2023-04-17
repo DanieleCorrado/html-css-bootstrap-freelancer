@@ -151,6 +151,12 @@ span {
   color: black;
 }
 
+.form-control  {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
 #contact_me #form strong {
   display: block;
   padding-top: 10px;
