@@ -47,6 +47,33 @@ span {
   display: block;
 }
 
+#burger_menu .fa-bars {
+  color: gray;
+  padding: 5px;
+  border: 1px solid white;
+  position: relative;
+}
+
+#burger_menu_show {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 30px;
+  z-index: 99;
+  background-color: grey;
+}
+
+#burger_menu:hover #burger_menu_show {
+  display: block;
+}
+
+#burger_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
 #menu {
   display: none;
 }
@@ -58,13 +85,14 @@ span {
   text-decoration: underline;
 }
 
+
 /* Regole jumbotrone */
 
 #jumbotrone {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-color: green;
+  background-color: rgb(26, 188, 156);
 }
 
 #profile_image {
@@ -198,6 +226,10 @@ footer {
 
 .fa-facebook-f {
   padding: 8px;
+}
+
+.fa-twitter {
+  padding: 3px;
 }
 
 .fa-linkedin-in {
