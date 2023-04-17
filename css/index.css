@@ -43,10 +43,13 @@ span {
   background-color: black;
 }
 
+#burger_menu {
+  display: block;
+}
+
 #menu {
   display: none;
 }
-
 #menu a {
   padding: 15px;
 }
@@ -105,12 +108,7 @@ span {
   --c: black; 
 }
 
-.work {
-  width: 90%;
-  margin: 20px auto;
-}
-
-.work img {
+#portfolio img {
   width: 100%;
 }
 
@@ -122,13 +120,7 @@ span {
   padding: 15px;
 }
 
-#about_me #description {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#about_me #description p{
-  padding-bottom: 30px;
+#about_me p {
   text-align: left;
 }
 
@@ -138,7 +130,7 @@ span {
   color: white;
   border-color: white;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 /* Regole contact me */
@@ -155,9 +147,8 @@ span {
 }
 
 #contact_me #form {
-  width: 40%;
-  margin: 10px auto;
-  text-align: left;
+  text-align: left; 
+  color: black;
 }
 
 #contact_me #form strong {
@@ -170,10 +161,6 @@ span {
 #contact_me #form #message {
   padding-bottom: 100px;
   margin-bottom: 10px;
-}
-
-#contact_me #form  {
-  color: black;
 }
 
 #contact_me #form button {
@@ -194,7 +181,7 @@ footer {
 
 #infos {
   background-color: rgb(58, 84, 109);
-  padding: 30px;
+  padding: 10px 0;
 }
 
 #infos span {
@@ -211,12 +198,6 @@ footer {
   padding: 6px;
 }
 
-
-#infos .col {
-  max-width: 30%;
-  margin: 0 auto;
-}
-
 #infos #social h3 {
   padding-bottom: 10px;
 }
@@ -225,83 +206,24 @@ footer {
   color: green;
 }
 
-#infos #social{
-  margin: 30px 10px;
-}
-
 #copyrights {
   background-color: black;
   padding: 35px;
+
 }
 
+@media screen and (min-width:935px) {
 
-
-/* Regole responsive  */
-
-/* Regole s */
-
-@media screen and (min-width:524px) {
-  #buger_menu {
+  #burger_menu {
     display: none;
   }
-
+  
   #menu {
     display: block;
   }
-
-  .work {
-    width: 45%;
-    margin: 5px auto;
-  }
-
-  #description {
-    display: flex;
-  }
-
-  #description p {
-    width: 50%;
-    margin-left: 15px;
-  }
-
-  #contact_me #form {
-    width: 90%;
-  }
-
-  #infos .col {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
 }
 
-/* Regole md */
 
-@media screen and (min-width:1121px) {
 
-  footer #infos {
-    display: flex;
-  }
 
-  footer #infos #social {
-    margin-top: 0;
-  }
-
-  .work {
-    width: 30%;
-  }
-
-  #contact_me #form {
-    width: 80%;
-  }
-
-}
-
-/* Regole lg */
-
-@media screen and (min-width:1360px) {
-
-  .work {
-    width: 30%;
-  }
-}
 
