@@ -136,7 +136,7 @@ span {
   background-color: transparent;
   padding: 5px;
   color: white;
-  border-color: wheat;
+  border-color: white;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -198,10 +198,19 @@ footer {
 }
 
 #infos span {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid white;
   border-radius: 50%;
 }
+
+.fa-facebook-f {
+  padding: 8px;
+}
+
+.fa-linkedin-in {
+  padding: 6px;
+}
+
 
 #infos .col {
   max-width: 30%;
@@ -217,7 +226,7 @@ footer {
 }
 
 #infos #social{
-  margin: 30px 0;
+  margin: 30px 10px;
 }
 
 #copyrights {
@@ -255,7 +264,12 @@ footer {
   }
 
   #contact_me #form {
-    width: 60%;
+    width: 90%;
+  }
+
+  #infos .col {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
 }
@@ -269,7 +283,7 @@ footer {
   }
 
   footer #infos #social {
-    margin: 0;
+    margin-top: 0;
   }
 
   .work {
